@@ -13,6 +13,12 @@
 		BCF5759525F661D100281B2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF5759325F661D100281B2C /* Main.storyboard */; };
 		BCF5759725F661D200281B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCF5759625F661D200281B2C /* Assets.xcassets */; };
 		BCF5759A25F661D200281B2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF5759825F661D200281B2C /* LaunchScreen.storyboard */; };
+		BCF575A425F6650E00281B2C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF575A325F6650E00281B2C /* HomeTableViewController.swift */; };
+		BCF575A825F66A0D00281B2C /* SoftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF575A725F66A0D00281B2C /* SoftViewController.swift */; };
+		BCF575AB25F6721F00281B2C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF575AA25F6721F00281B2C /* BaseViewController.swift */; };
+		BCF575AE25F7A7E500281B2C /* DiffableDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF575AD25F7A7E500281B2C /* DiffableDataSourceViewController.swift */; };
+		BCF575B225F7A81200281B2C /* sift.json in Resources */ = {isa = PBXBuildFile; fileRef = BCF575B125F7A81200281B2C /* sift.json */; };
+		BCF575B625F7A8D800281B2C /* SiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF575B525F7A8D800281B2C /* SiftModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		BCF5759625F661D200281B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCF5759925F661D200281B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCF5759B25F661D200281B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCF575A325F6650E00281B2C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		BCF575A725F66A0D00281B2C /* SoftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftViewController.swift; sourceTree = "<group>"; };
+		BCF575AA25F6721F00281B2C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BCF575AD25F7A7E500281B2C /* DiffableDataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceViewController.swift; sourceTree = "<group>"; };
+		BCF575B125F7A81200281B2C /* sift.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sift.json; sourceTree = "<group>"; };
+		BCF575B525F7A8D800281B2C /* SiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiftModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,9 @@
 		BCF5758C25F661D100281B2C /* SwiftList */ = {
 			isa = PBXGroup;
 			children = (
+				BCF575B425F7A86000281B2C /* Models */,
+				BCF575B025F7A7F400281B2C /* Mock */,
+				BCF575A225F6624000281B2C /* ViewControllers */,
 				BCF5758D25F661D100281B2C /* AppDelegate.swift */,
 				BCF5758F25F661D100281B2C /* SceneDelegate.swift */,
 				BCF5759125F661D100281B2C /* ViewController.swift */,
@@ -65,6 +80,33 @@
 				BCF5759B25F661D200281B2C /* Info.plist */,
 			);
 			path = SwiftList;
+			sourceTree = "<group>";
+		};
+		BCF575A225F6624000281B2C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCF575A325F6650E00281B2C /* HomeTableViewController.swift */,
+				BCF575A725F66A0D00281B2C /* SoftViewController.swift */,
+				BCF575AD25F7A7E500281B2C /* DiffableDataSourceViewController.swift */,
+				BCF575AA25F6721F00281B2C /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BCF575B025F7A7F400281B2C /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				BCF575B125F7A81200281B2C /* sift.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		BCF575B425F7A86000281B2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCF575B525F7A8D800281B2C /* SiftModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +169,7 @@
 				BCF5759A25F661D200281B2C /* LaunchScreen.storyboard in Resources */,
 				BCF5759725F661D200281B2C /* Assets.xcassets in Resources */,
 				BCF5759525F661D100281B2C /* Main.storyboard in Resources */,
+				BCF575B225F7A81200281B2C /* sift.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF575A425F6650E00281B2C /* HomeTableViewController.swift in Sources */,
+				BCF575B625F7A8D800281B2C /* SiftModel.swift in Sources */,
 				BCF5759225F661D100281B2C /* ViewController.swift in Sources */,
+				BCF575AE25F7A7E500281B2C /* DiffableDataSourceViewController.swift in Sources */,
+				BCF575A825F66A0D00281B2C /* SoftViewController.swift in Sources */,
 				BCF5758E25F661D100281B2C /* AppDelegate.swift in Sources */,
 				BCF5759025F661D100281B2C /* SceneDelegate.swift in Sources */,
+				BCF575AB25F6721F00281B2C /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
