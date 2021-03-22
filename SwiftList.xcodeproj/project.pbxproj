@@ -19,6 +19,9 @@
 		BCF575AE25F7A7E500281B2C /* DiffableDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF575AD25F7A7E500281B2C /* DiffableDataSourceViewController.swift */; };
 		BCF575B225F7A81200281B2C /* sift.json in Resources */ = {isa = PBXBuildFile; fileRef = BCF575B125F7A81200281B2C /* sift.json */; };
 		BCF575B625F7A8D800281B2C /* SiftModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF575B525F7A8D800281B2C /* SiftModel.swift */; };
+		BCF5760726039B2A00281B2C /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5760626039B2A00281B2C /* StickyHeaderViewController.swift */; };
+		BCF5760A2603AF4E00281B2C /* ChildListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF576092603AF4E00281B2C /* ChildListViewController.swift */; };
+		BCF5760E2605A83000281B2C /* StartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5760D2605A83000281B2C /* StartTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		BCF575AD25F7A7E500281B2C /* DiffableDataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceViewController.swift; sourceTree = "<group>"; };
 		BCF575B125F7A81200281B2C /* sift.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sift.json; sourceTree = "<group>"; };
 		BCF575B525F7A8D800281B2C /* SiftModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiftModel.swift; sourceTree = "<group>"; };
+		BCF5760626039B2A00281B2C /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
+		BCF576092603AF4E00281B2C /* ChildListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildListViewController.swift; sourceTree = "<group>"; };
+		BCF5760D2605A83000281B2C /* StartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 		BCF5758C25F661D100281B2C /* SwiftList */ = {
 			isa = PBXGroup;
 			children = (
+				BCF5760C2605A7D100281B2C /* StartMonitor */,
 				BCF575B425F7A86000281B2C /* Models */,
 				BCF575B025F7A7F400281B2C /* Mock */,
 				BCF575A225F6624000281B2C /* ViewControllers */,
@@ -89,6 +96,8 @@
 				BCF575A725F66A0D00281B2C /* SoftViewController.swift */,
 				BCF575AD25F7A7E500281B2C /* DiffableDataSourceViewController.swift */,
 				BCF575AA25F6721F00281B2C /* BaseViewController.swift */,
+				BCF5760626039B2A00281B2C /* StickyHeaderViewController.swift */,
+				BCF576092603AF4E00281B2C /* ChildListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -107,6 +116,14 @@
 				BCF575B525F7A8D800281B2C /* SiftModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BCF5760C2605A7D100281B2C /* StartMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				BCF5760D2605A83000281B2C /* StartTime.swift */,
+			);
+			path = StartMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,11 +198,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCF575A425F6650E00281B2C /* HomeTableViewController.swift in Sources */,
+				BCF5760A2603AF4E00281B2C /* ChildListViewController.swift in Sources */,
 				BCF575B625F7A8D800281B2C /* SiftModel.swift in Sources */,
 				BCF5759225F661D100281B2C /* ViewController.swift in Sources */,
 				BCF575AE25F7A7E500281B2C /* DiffableDataSourceViewController.swift in Sources */,
+				BCF5760E2605A83000281B2C /* StartTime.swift in Sources */,
 				BCF575A825F66A0D00281B2C /* SoftViewController.swift in Sources */,
 				BCF5758E25F661D100281B2C /* AppDelegate.swift in Sources */,
+				BCF5760726039B2A00281B2C /* StickyHeaderViewController.swift in Sources */,
 				BCF5759025F661D100281B2C /* SceneDelegate.swift in Sources */,
 				BCF575AB25F6721F00281B2C /* BaseViewController.swift in Sources */,
 			);
@@ -337,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW25G7UN2Y;
 				INFOPLIST_FILE = SwiftList/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW25G7UN2Y;
 				INFOPLIST_FILE = SwiftList/Info.plist;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

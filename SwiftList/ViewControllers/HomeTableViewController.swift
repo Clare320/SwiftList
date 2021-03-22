@@ -15,7 +15,8 @@ class HomeTableViewController: UITableViewController {
         "UITableView-MultiSelect",
         "UITableView-UIDiffableDataSource",
         "UICollectionView",
-        "UICollectionViewController"
+        "UICollectionViewController",
+        "头部固定"
     ]
     
     override func viewDidLoad() {
@@ -63,6 +64,9 @@ class HomeTableViewController: UITableViewController {
             navigationController?.pushViewController(vc, animated: true)
         case 1:
             let vc = DiffableDataSourceViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        case 4:
+            let vc = StickyHeaderViewController()
             navigationController?.pushViewController(vc, animated: true)
         default:
             print("do nothing")
