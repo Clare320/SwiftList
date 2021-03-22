@@ -16,7 +16,8 @@ class HomeTableViewController: UITableViewController {
         "UITableView-UIDiffableDataSource",
         "UICollectionView",
         "UICollectionViewController",
-        "头部固定"
+        "头部固定",
+        "ZhiHu"
     ]
     
     override func viewDidLoad() {
@@ -68,12 +69,14 @@ class HomeTableViewController: UITableViewController {
         case 4:
             let vc = StickyHeaderViewController()
             navigationController?.pushViewController(vc, animated: true)
+        case 5:
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ZhiHuLatestViewController")
+            push(vc: vc)
         default:
             print("do nothing")
         }
     }
     
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -119,4 +122,10 @@ class HomeTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension UIViewController {
+    func push(vc: UIViewController) {
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
