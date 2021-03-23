@@ -10,6 +10,7 @@ import RxSwift
 import Moya
 
 struct RxRequest {
+    // 这里Observable可换成Signal
     static func request<T>(service: MyService, type: T.Type) -> Observable<T>  where T : Decodable {
         return Observable.create { (observer) -> Disposable in
             let provider = MoyaProvider<MyService>()

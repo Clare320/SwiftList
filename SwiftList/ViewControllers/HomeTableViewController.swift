@@ -33,6 +33,12 @@ class HomeTableViewController: UITableViewController {
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        let _ = StartTime.appStartTime()
+    }
 
     // MARK: - Table view data source
 
