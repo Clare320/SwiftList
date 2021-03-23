@@ -17,7 +17,8 @@ class HomeTableViewController: UITableViewController {
         "UICollectionView",
         "UICollectionViewController",
         "头部固定",
-        "ZhiHu"
+        "ZhiHuLatestViewController",
+        "RxContentViewController"
     ]
     
     override func viewDidLoad() {
@@ -75,9 +76,8 @@ class HomeTableViewController: UITableViewController {
         case 4:
             let vc = StickyHeaderViewController()
             navigationController?.pushViewController(vc, animated: true)
-        case 5:
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ZhiHuLatestViewController")
-            push(vc: vc)
+        case 5, 6:
+            pushViewControlerInStoryBord(identifier: source[indexPath.row])
         default:
             print("do nothing")
         }
@@ -131,7 +131,12 @@ class HomeTableViewController: UITableViewController {
 }
 
 extension UIViewController {
-    func push(vc: UIViewController) {
+    func push(_ vc: UIViewController) {
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func pushViewControlerInStoryBord(identifier: String) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: identifier)
+        push(vc)
     }
 }

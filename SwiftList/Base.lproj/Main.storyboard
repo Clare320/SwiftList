@@ -63,6 +63,44 @@
             </objects>
             <point key="canvasLocation" x="668" y="88"/>
         </scene>
+        <!--Rx Content View Controller-->
+        <scene sceneID="s0d-lt-hrx">
+            <objects>
+                <viewController storyboardIdentifier="RxContentViewController" id="Mkp-BF-1Wd" customClass="RxContentViewController" customModule="SwiftList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ubN-zL-TDy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CoG-yt-F7Z">
+                                <rect key="frame" x="20" y="108" width="94" height="32"/>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVL-ls-1hx">
+                                <rect key="frame" x="186" y="113.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zLi-lt-eMA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CoG-yt-F7Z" firstAttribute="leading" secondItem="zLi-lt-eMA" secondAttribute="leading" constant="20" id="5Sh-Gb-fZK"/>
+                            <constraint firstItem="TVL-ls-1hx" firstAttribute="centerY" secondItem="CoG-yt-F7Z" secondAttribute="centerY" id="C63-4H-QGB"/>
+                            <constraint firstItem="TVL-ls-1hx" firstAttribute="leading" secondItem="CoG-yt-F7Z" secondAttribute="trailing" constant="72" id="Jzy-HJ-SCc"/>
+                            <constraint firstItem="CoG-yt-F7Z" firstAttribute="top" secondItem="zLi-lt-eMA" secondAttribute="top" constant="20" id="eKj-5z-TYr"/>
+                            <constraint firstItem="zLi-lt-eMA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="TVL-ls-1hx" secondAttribute="trailing" constant="186" id="yTa-nu-AUD"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="stepper" destination="CoG-yt-F7Z" id="LdH-1i-mxv"/>
+                        <outlet property="stepperLabel" destination="TVL-ls-1hx" id="LMv-Wx-Wv9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZwN-E5-Imc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="88"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

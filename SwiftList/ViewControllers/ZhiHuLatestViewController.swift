@@ -54,10 +54,10 @@ class ZhiHuLatestViewController: BaseViewController {
     }
     
     func testRxRequest() {
-        let _ = RxRequest.request(service: .latest, type: StoryResp.self)
+        let _ = RxRequest<StoryResp>.request(service: .latest)
             .take(until: self.rx.deallocated)
             .subscribe { (resp) in
-                print("resp:\(resp)")
+                print("resp:\(resp.date)")
             } onError: { (error) in
                 print("error: \(error)")
             } onCompleted: {
