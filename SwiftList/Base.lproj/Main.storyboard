@@ -80,6 +80,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE8-TU-8f7">
+                                <rect key="frame" x="44" y="160" width="32" height="30"/>
+                                <state key="normal" title="start"/>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="fdD-h9-tcW">
+                                <rect key="frame" x="142" y="156.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemPinkColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zLi-lt-eMA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -87,12 +95,18 @@
                             <constraint firstItem="CoG-yt-F7Z" firstAttribute="leading" secondItem="zLi-lt-eMA" secondAttribute="leading" constant="20" id="5Sh-Gb-fZK"/>
                             <constraint firstItem="TVL-ls-1hx" firstAttribute="centerY" secondItem="CoG-yt-F7Z" secondAttribute="centerY" id="C63-4H-QGB"/>
                             <constraint firstItem="TVL-ls-1hx" firstAttribute="leading" secondItem="CoG-yt-F7Z" secondAttribute="trailing" constant="72" id="Jzy-HJ-SCc"/>
+                            <constraint firstItem="fE8-TU-8f7" firstAttribute="top" secondItem="CoG-yt-F7Z" secondAttribute="bottom" constant="20" id="Mxt-2T-Ela"/>
+                            <constraint firstItem="fdD-h9-tcW" firstAttribute="leading" secondItem="fE8-TU-8f7" secondAttribute="trailing" constant="66" id="c50-4r-85Z"/>
+                            <constraint firstItem="fE8-TU-8f7" firstAttribute="leading" secondItem="zLi-lt-eMA" secondAttribute="leading" constant="44" id="eE9-ey-oHh"/>
                             <constraint firstItem="CoG-yt-F7Z" firstAttribute="top" secondItem="zLi-lt-eMA" secondAttribute="top" constant="20" id="eKj-5z-TYr"/>
+                            <constraint firstItem="fdD-h9-tcW" firstAttribute="centerY" secondItem="fE8-TU-8f7" secondAttribute="centerY" id="xmw-yY-HxL"/>
                             <constraint firstItem="zLi-lt-eMA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="TVL-ls-1hx" secondAttribute="trailing" constant="186" id="yTa-nu-AUD"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="fdD-h9-tcW" id="yio-dL-M96"/>
+                        <outlet property="showButton" destination="fE8-TU-8f7" id="cZV-Is-7m7"/>
                         <outlet property="stepper" destination="CoG-yt-F7Z" id="LdH-1i-mxv"/>
                         <outlet property="stepperLabel" destination="TVL-ls-1hx" id="LMv-Wx-Wv9"/>
                     </connections>
@@ -105,6 +119,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
