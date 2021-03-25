@@ -88,17 +88,39 @@
                                 <rect key="frame" x="142" y="156.5" width="37" height="37"/>
                                 <color key="color" systemColor="systemPinkColor"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BIv-DI-BxA">
+                                <rect key="frame" x="20" y="209" width="123" height="30"/>
+                                <state key="normal" title="showLoadingHUD"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2L-iw-EtD">
+                                <rect key="frame" x="186" y="209" width="80" height="30"/>
+                                <state key="normal" title="customHud"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teE-7G-uui" customClass="CustomLayerView" customModule="SwiftList" customModuleProvider="target">
+                                <rect key="frame" x="20" y="258" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="VAE-Gi-rXL"/>
+                                    <constraint firstAttribute="height" constant="80" id="cS6-VQ-vuu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zLi-lt-eMA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="CoG-yt-F7Z" firstAttribute="leading" secondItem="zLi-lt-eMA" secondAttribute="leading" constant="20" id="5Sh-Gb-fZK"/>
                             <constraint firstItem="TVL-ls-1hx" firstAttribute="centerY" secondItem="CoG-yt-F7Z" secondAttribute="centerY" id="C63-4H-QGB"/>
+                            <constraint firstItem="teE-7G-uui" firstAttribute="leading" secondItem="zLi-lt-eMA" secondAttribute="leading" constant="20" id="FKB-7u-ygR"/>
                             <constraint firstItem="TVL-ls-1hx" firstAttribute="leading" secondItem="CoG-yt-F7Z" secondAttribute="trailing" constant="72" id="Jzy-HJ-SCc"/>
                             <constraint firstItem="fE8-TU-8f7" firstAttribute="top" secondItem="CoG-yt-F7Z" secondAttribute="bottom" constant="20" id="Mxt-2T-Ela"/>
+                            <constraint firstItem="S2L-iw-EtD" firstAttribute="leading" secondItem="BIv-DI-BxA" secondAttribute="trailing" constant="43" id="Nfy-Oj-2pf"/>
+                            <constraint firstItem="teE-7G-uui" firstAttribute="top" secondItem="BIv-DI-BxA" secondAttribute="bottom" constant="19" id="Wsu-jJ-9Mx"/>
                             <constraint firstItem="fdD-h9-tcW" firstAttribute="leading" secondItem="fE8-TU-8f7" secondAttribute="trailing" constant="66" id="c50-4r-85Z"/>
+                            <constraint firstItem="S2L-iw-EtD" firstAttribute="centerY" secondItem="BIv-DI-BxA" secondAttribute="centerY" id="dgO-KY-Mwx"/>
                             <constraint firstItem="fE8-TU-8f7" firstAttribute="leading" secondItem="zLi-lt-eMA" secondAttribute="leading" constant="44" id="eE9-ey-oHh"/>
                             <constraint firstItem="CoG-yt-F7Z" firstAttribute="top" secondItem="zLi-lt-eMA" secondAttribute="top" constant="20" id="eKj-5z-TYr"/>
+                            <constraint firstItem="BIv-DI-BxA" firstAttribute="top" secondItem="fE8-TU-8f7" secondAttribute="bottom" constant="19" id="hFX-cf-pg7"/>
+                            <constraint firstItem="BIv-DI-BxA" firstAttribute="leading" secondItem="zLi-lt-eMA" secondAttribute="leading" constant="20" id="k5e-Ab-HtU"/>
                             <constraint firstItem="fdD-h9-tcW" firstAttribute="centerY" secondItem="fE8-TU-8f7" secondAttribute="centerY" id="xmw-yY-HxL"/>
                             <constraint firstItem="zLi-lt-eMA" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="TVL-ls-1hx" secondAttribute="trailing" constant="186" id="yTa-nu-AUD"/>
                         </constraints>
@@ -106,7 +128,9 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="activityIndicator" destination="fdD-h9-tcW" id="yio-dL-M96"/>
+                        <outlet property="customHudButton" destination="S2L-iw-EtD" id="8j1-wj-wdU"/>
                         <outlet property="showButton" destination="fE8-TU-8f7" id="cZV-Is-7m7"/>
+                        <outlet property="showHUDButton" destination="BIv-DI-BxA" id="4bv-BB-2PE"/>
                         <outlet property="stepper" destination="CoG-yt-F7Z" id="LdH-1i-mxv"/>
                         <outlet property="stepperLabel" destination="TVL-ls-1hx" id="LMv-Wx-Wv9"/>
                     </connections>

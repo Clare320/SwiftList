@@ -30,6 +30,8 @@
 		BCF5760726039B2A00281B2C /* StickyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5760626039B2A00281B2C /* StickyHeaderViewController.swift */; };
 		BCF5760A2603AF4E00281B2C /* ChildListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF576092603AF4E00281B2C /* ChildListViewController.swift */; };
 		BCF5760E2605A83000281B2C /* StartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5760D2605A83000281B2C /* StartTime.swift */; };
+		BCF66989260C2E6200B972DE /* LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF66988260C2E6200B972DE /* LoadingHUD.swift */; };
+		BCF6698D260C8B4700B972DE /* CustomLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF6698C260C8B4700B972DE /* CustomLayerView.swift */; };
 		C2817ECA2C95A39FAA7B1E37 /* Pods_SwiftList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD0A6F23B8B31ED14020E76 /* Pods_SwiftList.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		BCF5760626039B2A00281B2C /* StickyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeaderViewController.swift; sourceTree = "<group>"; };
 		BCF576092603AF4E00281B2C /* ChildListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildListViewController.swift; sourceTree = "<group>"; };
 		BCF5760D2605A83000281B2C /* StartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTime.swift; sourceTree = "<group>"; };
+		BCF66988260C2E6200B972DE /* LoadingHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingHUD.swift; sourceTree = "<group>"; };
+		BCF6698C260C8B4700B972DE /* CustomLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayerView.swift; sourceTree = "<group>"; };
 		C4752B46872995B4072C5562 /* Pods-SwiftList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftList.debug.xcconfig"; path = "Target Support Files/Pods-SwiftList/Pods-SwiftList.debug.xcconfig"; sourceTree = "<group>"; };
 		CAD0A6F23B8B31ED14020E76 /* Pods_SwiftList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +127,7 @@
 		BCF5758C25F661D100281B2C /* SwiftList */ = {
 			isa = PBXGroup;
 			children = (
+				BCF66987260C2E3400B972DE /* LoadingHUD */,
 				BC46F3382609CF87002D1C69 /* Rx */,
 				BC687DC026087DCE004E31E1 /* NetRequest */,
 				BCF5760C2605A7D100281B2C /* StartMonitor */,
@@ -179,6 +184,15 @@
 				BC46F3352609C7D2002D1C69 /* StartActions.swift */,
 			);
 			path = StartMonitor;
+			sourceTree = "<group>";
+		};
+		BCF66987260C2E3400B972DE /* LoadingHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BCF66988260C2E6200B972DE /* LoadingHUD.swift */,
+				BCF6698C260C8B4700B972DE /* CustomLayerView.swift */,
+			);
+			path = LoadingHUD;
 			sourceTree = "<group>";
 		};
 		D963D0A6A831CA18DE8123F1 /* Pods */ = {
@@ -319,9 +333,11 @@
 				BCF5758E25F661D100281B2C /* AppDelegate.swift in Sources */,
 				BC46F33B2609D34D002D1C69 /* TestRx.swift in Sources */,
 				BC46F33E2609D9F3002D1C69 /* RxContentViewController.swift in Sources */,
+				BCF66989260C2E6200B972DE /* LoadingHUD.swift in Sources */,
 				BCF5760726039B2A00281B2C /* StickyHeaderViewController.swift in Sources */,
 				BC46F3362609C7D2002D1C69 /* StartActions.swift in Sources */,
 				BC687DC226087DED004E31E1 /* MyService.swift in Sources */,
+				BCF6698D260C8B4700B972DE /* CustomLayerView.swift in Sources */,
 				BCF5759025F661D100281B2C /* SceneDelegate.swift in Sources */,
 				BCF575AB25F6721F00281B2C /* BaseViewController.swift in Sources */,
 			);

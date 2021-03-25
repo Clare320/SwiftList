@@ -15,13 +15,16 @@ class RxContentViewController: BaseViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var showButton: UIButton!
+    @IBOutlet weak var showHUDButton: UIButton!
+    @IBOutlet weak var customHudButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         bindControls()
         setButtonEvents()
-        TestRx().test()
+       
+        _ = LoadingHUD(frame: .zero, configuring: HudConfiguring())
     }
     
     // 如何让stepperLabel和stepper直接关联起来
@@ -68,6 +71,22 @@ class RxContentViewController: BaseViewController {
         ret.bind(to: activityIndicator.rx.isAnimating)
             .disposed(by: disposeBag)
         //
+        
+        showHUDButton.rx.tap.subscribe({ _ in
+            LoadingHUD.hud.show()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+                LoadingHUD.hud.dismiss()
+            }
+        }).disposed(by: disposeBag)
+        
+        customHudButton.rx.tap.subscribe { (_) in
+            let configuration = HudConfiguring(showMask: true, color: .blue, contentViewBackgroundColor: .white, offsetY: 0, isCoverNavigationBar: false)
+            let hud = LoadingHUD(frame: .zero, configuring: configuration)
+            hud.show()
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+                hud.dismiss()
+            }
+        }.disposed(by: disposeBag)
     }
 }
 
