@@ -7,6 +7,7 @@
 
 import UIKit
 import Moya
+import RxSwift
 import RxCocoa
 
 class ZhiHuLatestViewController: BaseViewController {
@@ -19,7 +20,14 @@ class ZhiHuLatestViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let barButtomItem = UIBarButtonItem(systemItem: .cancel)
+        barButtomItem.rx.tap.subscribe { (_) in
+            
+        }.disposed(by: disposeBag)
+        navigationItem.rightBarButtonItem = barButtomItem
+    
+        
         // Do any additional setup after loading the view.
         dataSource = UITableViewDiffableDataSource<Int, Story>(tableView: tableView) { (tableView, indexPath, story) -> UITableViewCell? in
             let cell = tableView.dequeueReusableCell(withIdentifier: "ZhiHu", for: indexPath)
@@ -55,6 +63,7 @@ class ZhiHuLatestViewController: BaseViewController {
     
     func testRxRequest() {
         let _ = RxRequest<StoryResp>.request(service: .latest)
+            .take(until: navigationItem.rightBarButtonItem!.rx.tap.asObservable())
             .take(until: self.rx.deallocated)
             .subscribe { (resp) in
                 print("resp:\(resp.date)")
@@ -68,3 +77,9 @@ class ZhiHuLatestViewController: BaseViewController {
     }
     
 }
+
+/**
+ 1. 多个请求结束后才去响应
+ 2. 多个请求，有请求依赖另一个请求的结果
+ 
+ */

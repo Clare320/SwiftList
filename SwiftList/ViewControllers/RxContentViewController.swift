@@ -107,6 +107,7 @@ ControlProperty
  Completed
  Maybe
  Singal
+ Driver : 不会发出error，在主线程，共享附加作用（没弄懂）
  */
 
 // Observer都有那些
@@ -122,3 +123,5 @@ ControlProperty
  BehaviorSubject 对其订阅时都会将最新的一个元素发出来，
  ControlProperty
  */
+
+// flatMapLatest

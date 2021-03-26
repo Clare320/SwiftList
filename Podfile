@@ -10,4 +10,5 @@ target 'SwiftList' do
   pod 'RxCocoa', '6.1.0'
   pod 'Moya'
   pod 'Kingfisher'
+  pod 'NVActivityIndicatorView'
 end
