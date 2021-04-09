@@ -18,7 +18,8 @@ class HomeTableViewController: UITableViewController {
         "UICollectionViewController",
         "头部固定",
         "ZhiHuLatestViewController",
-        "RxContentViewController"
+        "RxContentViewController",
+        "WebViewController"
     ]
     
     override func viewDidLoad() {
@@ -76,10 +77,8 @@ class HomeTableViewController: UITableViewController {
         case 4:
             let vc = StickyHeaderViewController()
             navigationController?.pushViewController(vc, animated: true)
-        case 5, 6:
-            pushViewControlerInStoryBord(identifier: source[indexPath.row])
         default:
-            print("do nothing")
+            pushViewControlerInStoryBord(identifier: source[indexPath.row])
         }
     }
     

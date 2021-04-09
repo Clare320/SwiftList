@@ -139,6 +139,40 @@
             </objects>
             <point key="canvasLocation" x="1364" y="88"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="nv5-uR-aD9">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="Db3-6B-79o" customClass="WebViewController" customModule="SwiftList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8dp-os-XaS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGD-ao-OWZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YSS-bD-aoA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YSS-bD-aoA" firstAttribute="bottom" secondItem="IGD-ao-OWZ" secondAttribute="bottom" id="7DB-HK-Er7"/>
+                            <constraint firstItem="YSS-bD-aoA" firstAttribute="trailing" secondItem="IGD-ao-OWZ" secondAttribute="trailing" id="Pkc-YP-5QQ"/>
+                            <constraint firstItem="IGD-ao-OWZ" firstAttribute="leading" secondItem="YSS-bD-aoA" secondAttribute="leading" id="ZqQ-jY-rLX"/>
+                            <constraint firstItem="IGD-ao-OWZ" firstAttribute="top" secondItem="YSS-bD-aoA" secondAttribute="top" id="dSq-0k-HVC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="IGD-ao-OWZ" id="x7m-Cd-zIw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JEU-fc-FiE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072" y="88"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
