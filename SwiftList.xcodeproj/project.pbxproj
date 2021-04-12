@@ -16,6 +16,8 @@
 		BC687DC926088842004E31E1 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC687DC826088842004E31E1 /* Story.swift */; };
 		BC687DCD2608A1DE004E31E1 /* RxRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC687DCC2608A1DE004E31E1 /* RxRequest.swift */; };
 		BCDBE8BF261F511200CBBD2E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBE8BE261F511200CBBD2E /* WebViewController.swift */; };
+		BCDBE8C326209C5300CBBD2E /* LJScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBE8C226209C5300CBBD2E /* LJScriptMessageHandler.swift */; };
+		BCDBE8CE2621345500CBBD2E /* DecidePolicyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBE8CD2621345500CBBD2E /* DecidePolicyHandler.swift */; };
 		BCF5758E25F661D100281B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5758D25F661D100281B2C /* AppDelegate.swift */; };
 		BCF5759025F661D100281B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5758F25F661D100281B2C /* SceneDelegate.swift */; };
 		BCF5759225F661D100281B2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5759125F661D100281B2C /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 		BC687DC826088842004E31E1 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		BC687DCC2608A1DE004E31E1 /* RxRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRequest.swift; sourceTree = "<group>"; };
 		BCDBE8BE261F511200CBBD2E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BCDBE8C226209C5300CBBD2E /* LJScriptMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LJScriptMessageHandler.swift; sourceTree = "<group>"; };
+		BCDBE8CD2621345500CBBD2E /* DecidePolicyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecidePolicyHandler.swift; sourceTree = "<group>"; };
 		BCF5758A25F661D100281B2C /* SwiftList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF5758D25F661D100281B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCF5758F25F661D100281B2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,22 @@
 			path = Timer;
 			sourceTree = "<group>";
 		};
+		BCDBE8C126209C4500CBBD2E /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBE8C226209C5300CBBD2E /* LJScriptMessageHandler.swift */,
+				BCDBE8CD2621345500CBBD2E /* DecidePolicyHandler.swift */,
+			);
+			path = WebKit;
+			sourceTree = "<group>";
+		};
+		BCDBE8D026216BAB00CBBD2E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BCF5758125F661D100281B2C = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +156,8 @@
 		BCF5758C25F661D100281B2C /* SwiftList */ = {
 			isa = PBXGroup;
 			children = (
+				BCDBE8D026216BAB00CBBD2E /* Extensions */,
+				BCDBE8C126209C4500CBBD2E /* WebKit */,
 				BC89552F261359790012DACF /* Timer */,
 				BCF66987260C2E3400B972DE /* LoadingHUD */,
 				BC46F3382609CF87002D1C69 /* Rx */,
@@ -330,12 +352,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCDBE8CE2621345500CBBD2E /* DecidePolicyHandler.swift in Sources */,
 				BCF575A425F6650E00281B2C /* HomeTableViewController.swift in Sources */,
 				BCDBE8BF261F511200CBBD2E /* WebViewController.swift in Sources */,
 				BCF5760A2603AF4E00281B2C /* ChildListViewController.swift in Sources */,
 				BC687DC62608828E004E31E1 /* ZhiHuLatestViewController.swift in Sources */,
 				BCF575B625F7A8D800281B2C /* SiftModel.swift in Sources */,
 				BC46F3412609EC8F002D1C69 /* UILabel+Rx.swift in Sources */,
+				BCDBE8C326209C5300CBBD2E /* LJScriptMessageHandler.swift in Sources */,
 				BCF5759225F661D100281B2C /* ViewController.swift in Sources */,
 				BC687DCD2608A1DE004E31E1 /* RxRequest.swift in Sources */,
 				BCF575AE25F7A7E500281B2C /* DiffableDataSourceViewController.swift in Sources */,
