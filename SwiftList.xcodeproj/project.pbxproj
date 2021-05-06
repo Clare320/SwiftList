@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC44F1DC2643C01B00A10DC5 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44F1DB2643C01B00A10DC5 /* NotificationManager.swift */; };
+		BC44F1DE2643C8FC00A10DC5 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44F1DD2643C8FC00A10DC5 /* PrivacyViewController.swift */; };
+		BC44F1E12643CCB800A10DC5 /* UIApplication+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC44F1E02643CCB800A10DC5 /* UIApplication+TopViewController.swift */; };
 		BC46F3362609C7D2002D1C69 /* StartActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC46F3352609C7D2002D1C69 /* StartActions.swift */; };
 		BC46F33B2609D34D002D1C69 /* TestRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC46F33A2609D34D002D1C69 /* TestRx.swift */; };
 		BC46F33E2609D9F3002D1C69 /* RxContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC46F33D2609D9F3002D1C69 /* RxContentViewController.swift */; };
@@ -15,6 +18,9 @@
 		BC687DC62608828E004E31E1 /* ZhiHuLatestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC687DC52608828E004E31E1 /* ZhiHuLatestViewController.swift */; };
 		BC687DC926088842004E31E1 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC687DC826088842004E31E1 /* Story.swift */; };
 		BC687DCD2608A1DE004E31E1 /* RxRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC687DCC2608A1DE004E31E1 /* RxRequest.swift */; };
+		BCD76E002637DE3100D8272D /* CheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD76DFF2637DE3100D8272D /* CheckViewController.swift */; };
+		BCD76E022637DEFC00D8272D /* Pods_SwiftList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD0A6F23B8B31ED14020E76 /* Pods_SwiftList.framework */; };
+		BCD76E0F2637EB1900D8272D /* GCDExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD76E0E2637EB1900D8272D /* GCDExample.swift */; };
 		BCF5758E25F661D100281B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5758D25F661D100281B2C /* AppDelegate.swift */; };
 		BCF5759025F661D100281B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5758F25F661D100281B2C /* SceneDelegate.swift */; };
 		BCF5759225F661D100281B2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5759125F661D100281B2C /* ViewController.swift */; };
@@ -32,11 +38,13 @@
 		BCF5760E2605A83000281B2C /* StartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5760D2605A83000281B2C /* StartTime.swift */; };
 		BCF66989260C2E6200B972DE /* LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF66988260C2E6200B972DE /* LoadingHUD.swift */; };
 		BCF6698D260C8B4700B972DE /* CustomLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF6698C260C8B4700B972DE /* CustomLayerView.swift */; };
-		C2817ECA2C95A39FAA7B1E37 /* Pods_SwiftList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD0A6F23B8B31ED14020E76 /* Pods_SwiftList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F823A9D9380856DCDA6AB2A /* Pods-SwiftList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftList.release.xcconfig"; path = "Target Support Files/Pods-SwiftList/Pods-SwiftList.release.xcconfig"; sourceTree = "<group>"; };
+		BC44F1DB2643C01B00A10DC5 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		BC44F1DD2643C8FC00A10DC5 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		BC44F1E02643CCB800A10DC5 /* UIApplication+TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopViewController.swift"; sourceTree = "<group>"; };
 		BC46F3352609C7D2002D1C69 /* StartActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartActions.swift; sourceTree = "<group>"; };
 		BC46F33A2609D34D002D1C69 /* TestRx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRx.swift; sourceTree = "<group>"; };
 		BC46F33D2609D9F3002D1C69 /* RxContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxContentViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +53,8 @@
 		BC687DC52608828E004E31E1 /* ZhiHuLatestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhiHuLatestViewController.swift; sourceTree = "<group>"; };
 		BC687DC826088842004E31E1 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		BC687DCC2608A1DE004E31E1 /* RxRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxRequest.swift; sourceTree = "<group>"; };
+		BCD76DFF2637DE3100D8272D /* CheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewController.swift; sourceTree = "<group>"; };
+		BCD76E0E2637EB1900D8272D /* GCDExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDExample.swift; sourceTree = "<group>"; };
 		BCF5758A25F661D100281B2C /* SwiftList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCF5758D25F661D100281B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCF5758F25F661D100281B2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2817ECA2C95A39FAA7B1E37 /* Pods_SwiftList.framework in Frameworks */,
+				BCD76E022637DEFC00D8272D /* Pods_SwiftList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,22 @@
 				CAD0A6F23B8B31ED14020E76 /* Pods_SwiftList.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC44F1DA2643BBB500A10DC5 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				BC44F1DB2643C01B00A10DC5 /* NotificationManager.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		BC44F1DF2643CBD600A10DC5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC44F1E02643CCB800A10DC5 /* UIApplication+TopViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BC46F3382609CF87002D1C69 /* Rx */ = {
@@ -104,6 +130,14 @@
 				BC687DCC2608A1DE004E31E1 /* RxRequest.swift */,
 			);
 			path = NetRequest;
+			sourceTree = "<group>";
+		};
+		BCD76E0D2637E2A000D8272D /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				BCD76E0E2637EB1900D8272D /* GCDExample.swift */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		BCF5758125F661D100281B2C = {
@@ -127,6 +161,9 @@
 		BCF5758C25F661D100281B2C /* SwiftList */ = {
 			isa = PBXGroup;
 			children = (
+				BC44F1DF2643CBD600A10DC5 /* Extensions */,
+				BC44F1DA2643BBB500A10DC5 /* Notification */,
+				BCD76E0D2637E2A000D8272D /* GCD */,
 				BCF66987260C2E3400B972DE /* LoadingHUD */,
 				BC46F3382609CF87002D1C69 /* Rx */,
 				BC687DC026087DCE004E31E1 /* NetRequest */,
@@ -156,6 +193,8 @@
 				BCF576092603AF4E00281B2C /* ChildListViewController.swift */,
 				BC687DC52608828E004E31E1 /* ZhiHuLatestViewController.swift */,
 				BC46F33D2609D9F3002D1C69 /* RxContentViewController.swift */,
+				BCD76DFF2637DE3100D8272D /* CheckViewController.swift */,
+				BC44F1DD2643C8FC00A10DC5 /* PrivacyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -325,6 +364,7 @@
 				BCF575B625F7A8D800281B2C /* SiftModel.swift in Sources */,
 				BC46F3412609EC8F002D1C69 /* UILabel+Rx.swift in Sources */,
 				BCF5759225F661D100281B2C /* ViewController.swift in Sources */,
+				BC44F1DC2643C01B00A10DC5 /* NotificationManager.swift in Sources */,
 				BC687DCD2608A1DE004E31E1 /* RxRequest.swift in Sources */,
 				BCF575AE25F7A7E500281B2C /* DiffableDataSourceViewController.swift in Sources */,
 				BCF5760E2605A83000281B2C /* StartTime.swift in Sources */,
@@ -335,11 +375,15 @@
 				BC46F33E2609D9F3002D1C69 /* RxContentViewController.swift in Sources */,
 				BCF66989260C2E6200B972DE /* LoadingHUD.swift in Sources */,
 				BCF5760726039B2A00281B2C /* StickyHeaderViewController.swift in Sources */,
+				BC44F1E12643CCB800A10DC5 /* UIApplication+TopViewController.swift in Sources */,
+				BC44F1DE2643C8FC00A10DC5 /* PrivacyViewController.swift in Sources */,
 				BC46F3362609C7D2002D1C69 /* StartActions.swift in Sources */,
 				BC687DC226087DED004E31E1 /* MyService.swift in Sources */,
+				BCD76E0F2637EB1900D8272D /* GCDExample.swift in Sources */,
 				BCF6698D260C8B4700B972DE /* CustomLayerView.swift in Sources */,
 				BCF5759025F661D100281B2C /* SceneDelegate.swift in Sources */,
 				BCF575AB25F6721F00281B2C /* BaseViewController.swift in Sources */,
+				BCD76E002637DE3100D8272D /* CheckViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,8 +529,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4752B46872995B4072C5562 /* Pods-SwiftList.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW25G7UN2Y;
 				INFOPLIST_FILE = SwiftList/Info.plist;
@@ -495,8 +544,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingjie.SwiftList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingjie.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -506,6 +556,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F823A9D9380856DCDA6AB2A /* Pods-SwiftList.release.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					x86_64,
+				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

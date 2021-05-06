@@ -18,7 +18,9 @@ class HomeTableViewController: UITableViewController {
         "UICollectionViewController",
         "头部固定",
         "ZhiHuLatestViewController",
-        "RxContentViewController"
+        "RxContentViewController",
+        "CheckViewController",
+        "PrivacyViewController"
     ]
     
     override func viewDidLoad() {
@@ -76,10 +78,11 @@ class HomeTableViewController: UITableViewController {
         case 4:
             let vc = StickyHeaderViewController()
             navigationController?.pushViewController(vc, animated: true)
-        case 5, 6:
-            pushViewControlerInStoryBord(identifier: source[indexPath.row])
+        case 7:
+            let vc = CheckViewController()
+            push(vc)
         default:
-            print("do nothing")
+            pushViewControlerInStoryBord(identifier: source[indexPath.row])
         }
     }
     

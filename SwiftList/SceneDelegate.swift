@@ -37,6 +37,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
         // iOS13+  统计启动时长
         let _ = StartTime.appStartTime()
+        
+        NotificationManager.shared.requestAuthorization()
     }
 
     func sceneWillResignActive(_ scene: UIScene) {

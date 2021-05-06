@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,7 +36,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ZhiHu" id="HBh-Td-IeD">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HBh-Td-IeD" id="pTT-L0-u8l">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -138,6 +138,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZwN-E5-Imc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1364" y="88"/>
+        </scene>
+        <!--Privacy View Controller-->
+        <scene sceneID="dim-Ar-yDW">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyViewController" id="6Cp-Yk-bSV" customClass="PrivacyViewController" customModule="SwiftList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16L-Hw-SXr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V75-Ah-x7l">
+                                <rect key="frame" x="12" y="100" width="133" height="30"/>
+                                <state key="normal" title="request notification"/>
+                                <connections>
+                                    <action selector="requestNotification:" destination="6Cp-Yk-bSV" eventType="touchUpInside" id="hw7-oe-dsR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亮度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh7-5r-t7m">
+                                <rect key="frame" x="12" y="142" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hkP-AM-Sk8">
+                                <rect key="frame" x="57" y="137.5" width="347" height="31"/>
+                                <connections>
+                                    <action selector="changeScreenLight:" destination="6Cp-Yk-bSV" eventType="valueChanged" id="PPW-ts-U8X"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iN7-vM-ulz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hkP-AM-Sk8" firstAttribute="leading" secondItem="wh7-5r-t7m" secondAttribute="trailing" constant="12" id="00W-e6-Va2"/>
+                            <constraint firstItem="wh7-5r-t7m" firstAttribute="leading" secondItem="iN7-vM-ulz" secondAttribute="leading" constant="12" id="5OC-Sm-aaX"/>
+                            <constraint firstItem="wh7-5r-t7m" firstAttribute="top" secondItem="V75-Ah-x7l" secondAttribute="bottom" constant="12" id="8gk-1H-CcQ"/>
+                            <constraint firstItem="V75-Ah-x7l" firstAttribute="top" secondItem="iN7-vM-ulz" secondAttribute="top" constant="12" id="FaB-hW-l45"/>
+                            <constraint firstItem="iN7-vM-ulz" firstAttribute="trailing" secondItem="hkP-AM-Sk8" secondAttribute="trailing" constant="12" id="Is2-Zy-d2p"/>
+                            <constraint firstItem="wh7-5r-t7m" firstAttribute="centerY" secondItem="hkP-AM-Sk8" secondAttribute="centerY" id="c9a-Tp-Lj4"/>
+                            <constraint firstItem="V75-Ah-x7l" firstAttribute="leading" secondItem="16L-Hw-SXr" secondAttribute="leading" constant="12" id="oO5-wV-0Jg"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="lightSlider" destination="hkP-AM-Sk8" id="hvg-Cu-vSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lf8-vt-rdH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082.608695652174" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
