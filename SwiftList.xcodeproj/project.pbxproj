@@ -39,7 +39,36 @@
 		BCF5760E2605A83000281B2C /* StartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF5760D2605A83000281B2C /* StartTime.swift */; };
 		BCF66989260C2E6200B972DE /* LoadingHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF66988260C2E6200B972DE /* LoadingHUD.swift */; };
 		BCF6698D260C8B4700B972DE /* CustomLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF6698C260C8B4700B972DE /* CustomLayerView.swift */; };
+		BCFC867F264C1E4100DE0AFA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFC867E264C1E4100DE0AFA /* WidgetKit.framework */; };
+		BCFC8681264C1E4100DE0AFA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCFC8680264C1E4100DE0AFA /* SwiftUI.framework */; };
+		BCFC8684264C1E4100DE0AFA /* SwiftListWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFC8683264C1E4100DE0AFA /* SwiftListWidget.swift */; };
+		BCFC8686264C1E4200DE0AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFC8685264C1E4200DE0AFA /* Assets.xcassets */; };
+		BCFC868A264C1E4200DE0AFA /* SwiftListWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BCFC867D264C1E4100DE0AFA /* SwiftListWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCFC8688264C1E4200DE0AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCF5758225F661D100281B2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCFC867C264C1E4100DE0AFA;
+			remoteInfo = SwiftListWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCFC868B264C1E4200DE0AFA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BCFC868A264C1E4200DE0AFA /* SwiftListWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F823A9D9380856DCDA6AB2A /* Pods-SwiftList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftList.release.xcconfig"; path = "Target Support Files/Pods-SwiftList/Pods-SwiftList.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +105,12 @@
 		BCF5760D2605A83000281B2C /* StartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTime.swift; sourceTree = "<group>"; };
 		BCF66988260C2E6200B972DE /* LoadingHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingHUD.swift; sourceTree = "<group>"; };
 		BCF6698C260C8B4700B972DE /* CustomLayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayerView.swift; sourceTree = "<group>"; };
+		BCFC867D264C1E4100DE0AFA /* SwiftListWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftListWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFC867E264C1E4100DE0AFA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BCFC8680264C1E4100DE0AFA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BCFC8683264C1E4100DE0AFA /* SwiftListWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftListWidget.swift; sourceTree = "<group>"; };
+		BCFC8685264C1E4200DE0AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCFC8687264C1E4200DE0AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4752B46872995B4072C5562 /* Pods-SwiftList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftList.debug.xcconfig"; path = "Target Support Files/Pods-SwiftList/Pods-SwiftList.debug.xcconfig"; sourceTree = "<group>"; };
 		CAD0A6F23B8B31ED14020E76 /* Pods_SwiftList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +124,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCFC867A264C1E4100DE0AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFC8681264C1E4100DE0AFA /* SwiftUI.framework in Frameworks */,
+				BCFC867F264C1E4100DE0AFA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				CAD0A6F23B8B31ED14020E76 /* Pods_SwiftList.framework */,
+				BCFC867E264C1E4100DE0AFA /* WidgetKit.framework */,
+				BCFC8680264C1E4100DE0AFA /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -154,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF5758C25F661D100281B2C /* SwiftList */,
+				BCFC8682264C1E4100DE0AFA /* SwiftListWidget */,
 				BCF5758B25F661D100281B2C /* Products */,
 				D963D0A6A831CA18DE8123F1 /* Pods */,
 				1A08D7F93BF349541DD1BD5B /* Frameworks */,
@@ -164,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF5758A25F661D100281B2C /* SwiftList.app */,
+				BCFC867D264C1E4100DE0AFA /* SwiftListWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,6 +293,16 @@
 			path = LoadingHUD;
 			sourceTree = "<group>";
 		};
+		BCFC8682264C1E4100DE0AFA /* SwiftListWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BCFC8683264C1E4100DE0AFA /* SwiftListWidget.swift */,
+				BCFC8685264C1E4200DE0AFA /* Assets.xcassets */,
+				BCFC8687264C1E4200DE0AFA /* Info.plist */,
+			);
+			path = SwiftListWidget;
+			sourceTree = "<group>";
+		};
 		D963D0A6A831CA18DE8123F1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,19 +320,40 @@
 			buildConfigurationList = BCF5759E25F661D200281B2C /* Build configuration list for PBXNativeTarget "SwiftList" */;
 			buildPhases = (
 				972BEF16407F7BB1EC59D309 /* [CP] Check Pods Manifest.lock */,
+				12344D751ABCDEEBBFC7B853 /* [CP] Prepare Artifacts */,
+				216A9AF0A71A63FC9492DE5A /* [CP-User] Run Flutter Build swiftlist_flutter Script */,
 				BCF5758625F661D100281B2C /* Sources */,
 				BCF5758725F661D100281B2C /* Frameworks */,
 				BCF5758825F661D100281B2C /* Resources */,
 				A58651830CA41978962047DE /* [CP] Embed Pods Frameworks */,
+				BCFC868B264C1E4200DE0AFA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BCFC8689264C1E4200DE0AFA /* PBXTargetDependency */,
 			);
 			name = SwiftList;
 			productName = SwiftList;
 			productReference = BCF5758A25F661D100281B2C /* SwiftList.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BCFC867C264C1E4100DE0AFA /* SwiftListWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFC868E264C1E4200DE0AFA /* Build configuration list for PBXNativeTarget "SwiftListWidgetExtension" */;
+			buildPhases = (
+				BCFC8679264C1E4100DE0AFA /* Sources */,
+				BCFC867A264C1E4100DE0AFA /* Frameworks */,
+				BCFC867B264C1E4100DE0AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftListWidgetExtension;
+			productName = SwiftListWidgetExtension;
+			productReference = BCFC867D264C1E4100DE0AFA /* SwiftListWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -282,11 +361,14 @@
 		BCF5758225F661D100281B2C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					BCF5758925F661D100281B2C = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					BCFC867C264C1E4100DE0AFA = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
@@ -304,6 +386,7 @@
 			projectRoot = "";
 			targets = (
 				BCF5758925F661D100281B2C /* SwiftList */,
+				BCFC867C264C1E4100DE0AFA /* SwiftListWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -320,9 +403,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCFC867B264C1E4100DE0AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFC8686264C1E4200DE0AFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		12344D751ABCDEEBBFC7B853 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftList/Pods-SwiftList-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftList/Pods-SwiftList-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftList/Pods-SwiftList-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		216A9AF0A71A63FC9492DE5A /* [CP-User] Run Flutter Build swiftlist_flutter Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build swiftlist_flutter Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../swiftlist_flutter/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
 		972BEF16407F7BB1EC59D309 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,7 +517,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCFC8679264C1E4100DE0AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFC8684264C1E4100DE0AFA /* SwiftListWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCFC8689264C1E4200DE0AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCFC867C264C1E4100DE0AFA /* SwiftListWidgetExtension */;
+			targetProxy = BCFC8688264C1E4200DE0AFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BCF5759325F661D100281B2C /* Main.storyboard */ = {
@@ -541,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4752B46872995B4072C5562 /* Pods-SwiftList.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
 					x86_64,
@@ -551,6 +686,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YW25G7UN2Y;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = SwiftList/Info.plist;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,12 +705,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F823A9D9380856DCDA6AB2A /* Pods-SwiftList.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ARCHS = (
 					"$(ARCHS_STANDARD)",
 					x86_64,
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW25G7UN2Y;
 				INFOPLIST_FILE = SwiftList/Info.plist;
@@ -583,8 +721,55 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lingjie.SwiftList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingjie.swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCFC868C264C1E4200DE0AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YW25G7UN2Y;
+				INFOPLIST_FILE = SwiftListWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingjie.swift.SwiftListWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCFC868D264C1E4200DE0AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YW25G7UN2Y;
+				INFOPLIST_FILE = SwiftListWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lingjie.swift.SwiftListWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -607,6 +792,15 @@
 			buildConfigurations = (
 				BCF5759F25F661D200281B2C /* Debug */,
 				BCF575A025F661D200281B2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFC868E264C1E4200DE0AFA /* Build configuration list for PBXNativeTarget "SwiftListWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFC868C264C1E4200DE0AFA /* Debug */,
+				BCFC868D264C1E4200DE0AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

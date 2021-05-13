@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.4.1)
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
   - Kingfisher (6.1.1)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
@@ -14,13 +17,18 @@ PODS:
   - RxRelay (6.1.0):
     - RxSwift (= 6.1.0)
   - RxSwift (6.1.0)
+  - swiftlist_flutter (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
+  - Flutter (from `../swiftlist_flutter/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `../swiftlist_flutter/.ios/Flutter/FlutterPluginRegistrant`)
   - Kingfisher
   - Moya
   - NVActivityIndicatorView
   - RxCocoa (= 6.1.0)
   - RxSwift (= 6.1.0)
+  - swiftlist_flutter (from `../swiftlist_flutter/.ios/Flutter`)
 
 SPEC REPOS:
   trunk:
@@ -32,15 +40,26 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../swiftlist_flutter/.ios/Flutter/engine"
+  FlutterPluginRegistrant:
+    :path: "../swiftlist_flutter/.ios/Flutter/FlutterPluginRegistrant"
+  swiftlist_flutter:
+    :path: "../swiftlist_flutter/.ios/Flutter"
+
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Flutter: ac41d61a47ae5bf8195a5598d2d63754888ec0d5
+  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
   Kingfisher: 676d63307fbef6ed5d5ed400bff36983480d7500
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  swiftlist_flutter: dfdc9f961399a4dd065d22a810b06c1dc73a87f9
 
-PODFILE CHECKSUM: ab44cb9b8d4df4d2721eaf669b54c4ad2172a93f
+PODFILE CHECKSUM: a9bc3845c20c5f52e3522a25d8ffe20a450cd741
 
 COCOAPODS: 1.9.1

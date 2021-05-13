@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Flutter
 
 class HomeTableViewController: UITableViewController {
 
@@ -40,9 +41,26 @@ class HomeTableViewController: UITableViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
+        setupRightNaviItem()
+        
+        
         let _ = StartTime.appStartTime()
+        
     }
 
+    func setupRightNaviItem() {
+        let rightItem = UIBarButtonItem(title: "Flutter", style: .plain, target: self, action: #selector(presentFlutterViewController))
+        navigationItem.rightBarButtonItem = rightItem
+    }
+    
+    @objc
+    func presentFlutterViewController() {
+        let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
+        let flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
+        navigationController?.present(flutterViewController, animated: true, completion: nil)
+    }
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
