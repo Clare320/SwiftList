@@ -39,16 +39,32 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct SwiftListWidgetEntryView : View {
+    @Environment(\.widgetFamily) var family: WidgetFamily
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        switch family {
+        case .systemMedium:
+            MediumWidgetView(entry: entry)
+        default:
+            SmallWidgetView(entry: entry)
+        }
     }
 }
 
+struct SmallWidgetView: View {
+    var entry: SimpleEntry
+    
+    var body: some View {
+        Text("samll")
+    }
+}
+
+
 @main
 struct SwiftListWidget: Widget {
-    let kind: String = "SwiftListWidget"
+    
+    let kind: String = "com.lingjie.swift.widget"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
@@ -56,6 +72,7 @@ struct SwiftListWidget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+        .supportedFamilies([.systemMedium, .systemSmall])
     }
 }
 
@@ -63,5 +80,7 @@ struct SwiftListWidget_Previews: PreviewProvider {
     static var previews: some View {
         SwiftListWidgetEntryView(entry: SimpleEntry(date: Date()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
+        SwiftListWidgetEntryView(entry: SimpleEntry(date: Date()))
+            .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }
