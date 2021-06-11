@@ -11,6 +11,20 @@ import WidgetKit
 struct MediumWidgetView: View {
     var entry: SimpleEntry
     
+    let leftView: some View =  HStack {
+        VStack {
+            HStack {
+                LinkItem(link: "https://www.baidu.com", title: "菜单1", icon: "bolt.fill")
+                LinkItem(link: "https://www.baidu.com", title: "菜单2", icon: "bolt.fill")
+            }
+            HStack {
+                LinkItem(link: "https://www.baidu.com", title: "菜单3", icon: "bolt.fill")
+                LinkItem(link: "https://www.baidu.com", title: "菜单4", icon: "bolt.fill")
+            }
+        }
+    }
+    .padding(.leading, 20)
+    
     let rightDateView: some View =  HStack {
         VStack(alignment: .leading, spacing: 5) {
             Text("6月9号 周三")
@@ -18,20 +32,12 @@ struct MediumWidgetView: View {
             Text("去看看")
         }
     }
-    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 70))
+    .font(.system(size: 13))
+    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 50))
     
     var body: some View {
         HStack {
-            HStack {
-                VStack {
-                    HStack {
-                        
-                    }
-                    HStack {
-                        
-                    }
-                }
-            }
+            leftView
             Spacer()
             rightDateView
         }
