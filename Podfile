@@ -13,7 +13,7 @@ target 'SwiftList' do
   # Pods for SwiftList
   pod 'RxSwift', '6.1.0'
   pod 'RxCocoa', '6.1.0'
-  pod 'Moya'
-  pod 'Kingfisher'
-  pod 'NVActivityIndicatorView'
+  pod 'Moya', '~> 14.0'
+  pod 'Kingfisher', '~> 6.3.0'
+  pod 'NVActivityIndicatorView', '~> 5.1.1'
 end

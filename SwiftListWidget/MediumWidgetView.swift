@@ -9,17 +9,17 @@ import SwiftUI
 import WidgetKit
 
 struct MediumWidgetView: View {
-    var entry: SimpleEntry
+    var entry: IntentEntry
     
     let leftView: some View =  HStack {
         VStack {
             HStack {
-                LinkItem(link: "https://www.baidu.com", title: "菜单1", icon: "bolt.fill")
-                LinkItem(link: "https://www.baidu.com", title: "菜单2", icon: "bolt.fill")
+                LinkItem(link: "sl://ljie.com/menu1", title: "菜单1", icon: "bolt.fill")
+                LinkItem(link: "sl://ljie.com/menu2", title: "菜单2", icon: "bolt.fill")
             }
             HStack {
-                LinkItem(link: "https://www.baidu.com", title: "菜单3", icon: "bolt.fill")
-                LinkItem(link: "https://www.baidu.com", title: "菜单4", icon: "bolt.fill")
+                LinkItem(link: "sl://ljie.com/menu3", title: "菜单3", icon: "bolt.fill")
+                LinkItem(link: "sl://ljie.com/menu4", title: "菜单4", icon: "bolt.fill")
             }
         }
     }
@@ -45,8 +45,13 @@ struct MediumWidgetView: View {
 }
 
 struct MediumWidgetView_Previews: PreviewProvider {
+    static var characters: GameCharacter = {
+        let character = GameCharacter(identifier: "扫一扫", display: "扫一扫")
+        character.name = "扫一扫"
+        return character
+    }()
     static var previews: some View {
-        MediumWidgetView(entry: SimpleEntry(date: Date()))
+        MediumWidgetView(entry: IntentEntry(date: Date(), character: characters))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
 }

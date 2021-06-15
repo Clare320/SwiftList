@@ -40,14 +40,14 @@ struct SimpleEntry: TimelineEntry {
 
 struct SwiftListWidgetEntryView : View {
     @Environment(\.widgetFamily) var family: WidgetFamily
-    var entry: Provider.Entry
+    var entry: TimelineEntry
 
     var body: some View {
         switch family {
         case .systemMedium:
-            MediumWidgetView(entry: entry)
+            MediumWidgetView(entry: entry as! IntentEntry)
         default:
-            SmallWidgetView(entry: entry)
+            SmallWidgetView(entry: entry as! SimpleEntry)
         }
     }
 }
@@ -67,9 +67,9 @@ struct SwiftListWidget: Widget {
     let kind: String = "com.lingjie.swift.widget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
+        IntentConfiguration(kind: kind, intent: SelectCharacterIntent.self, provider: SLIntentTimeProvider(), content: { entry in
             SwiftListWidgetEntryView(entry: entry)
-        }
+        })
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
         .supportedFamilies([.systemMedium, .systemSmall])
